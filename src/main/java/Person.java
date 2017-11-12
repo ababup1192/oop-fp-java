@@ -25,6 +25,14 @@ public class Person {
         return new Person(name, age);
     }
 
+    public String introduce(){
+        String hi = "Hi! ";
+        String n = "My name is " + name + "! ";
+        String a = "My age is " + age + ".";
+
+        return hi + n + a;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
